@@ -1,0 +1,203 @@
+* {
+    background-color: white;
+}
+
+/* Header */
+
+.header {
+    height: auto;
+    padding: 1em 3em;
+    display: block;
+    position: relative;
+}
+
+/* Header__info */
+
+.header__right {
+    margin-top: 1em;
+}
+
+.header__right__github {
+    
+}
+
+.header__right__twitter {
+    color: rgb(54, 126, 209);
+}
+
+.header__right__github:hover,
+.header__right__twitter:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* Header__logo */
+
+.header__logo {
+    
+}
+
+.header__logo > img {
+    width: 4em;
+    height: 4em;
+    border-radius: 10px;
+}
+
+.header__logo > img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.header__logo > span {
+    font-size: 2em;
+    color: rgb(143, 143, 143);
+}
+
+/* Main */
+
+.main {
+    height: 8em;
+}
+
+#main-application {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.item-application {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.item-application__registery {
+    background: rgb(54, 126, 209);
+    color: white;
+    padding: 5px 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.item-application__registery > svg {
+    background: rgb(54, 126, 209);
+    color: white;
+}
+
+.main__banner__image {
+    margin-top: 2em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main__banner__image > img {
+    width: 80%;
+    height: 60%;
+}
+
+.main__banner__title {
+    text-align: center;
+    margin-left: 1em;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.main__formroom {
+    text-align: center;
+}
+
+.main__formroom__info1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.main__formroom__info2 {
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.main__formroom__username {
+    margin: 0.5em 0;
+}
+
+.main__formroom__inputroom {
+
+}
+
+.main__formroom__submit {
+
+}
+
+.main__formroom__registery {
+    margin: 1.5em 0;
+}
+
+.notification__room__registery {
+    width: 25em;
+    height: 15em;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 10px 5px;
+    border-radius: 15px;
+    z-index: 0;
+    opacity: 0;
+    display: none;
+}
+
+.notification__room__registery__item {
+    margin: 3px 0;
+    width: 100%;
+}
+
+.notification__room__registery__title {
+
+}
+
+/* Title */
+.notification__room__registery__title > span {
+    font-size: 18px;
+}
+
+/* Button__title */
+.notification__room__registery__title > svg {
+    margin: 0 23px;
+}
+
+.notification__room__registery__title > svg:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.notification__room__registery__content {
+    color: grey;
+}
+
+.notification__room__registery__room > p {
+    font-weight: bolder;
+}
+
+.notification__room__registery__room > p > span {
+    font-weight: normal;
+}
+
+.notification__room__registery__phone > p > span {
+    font-weight: bolder;
+}
+
+.item__hideen {
+    display: none;
+    opacity: 0;
+}
+
+.item__show {
+    display: block;
+    opacity: 1;
+}
+
+

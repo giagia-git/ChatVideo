@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Content */
+.content {
+    width: 70%;
+    height: 32em;
+    float: left;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+#video-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 450px);
+	grid-auto-rows: 250px;
+	padding: 5px 30px;
+}
+  
+#video-grid video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* zoom in to make it square */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    height: 32em;
+    display: block;
+    background-color: black;
+    float: left;
+    padding: 0 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow :hidden;
+    word-wrap:break-word;
+}
+
+
+/* Chat Page */
+
+.chat-container {
+	width: 100%;
+	background: rgb(248, 240, 240);
+	margin: 0 auto;
+	overflow: hidden;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+}
+
+.chat-header {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    background-color:rgb(248, 240, 240);
+}
+
+.chat-header > h1 {
+    font-size: 22px;
+}
+
+.chat-main {
+	display: block;
+    height: 22.3em;
+}
+
+.chat-sidebar {
+	color: #fff;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+} 
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 0;
+	height: 95%;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	/* padding: 10px;
+	margin-bottom: 15px; */
+    padding: 5px;
+    margin-bottom: 5px;
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	opacity: 0.7;
+	margin-bottom: 3px;
+}
+
+.chat-messages .message .meta span {
+	color: red;
+}
+
+.is-typing {
+    height: 5%;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0.5em;
+}
+
+.chat-form-container {
+	padding: 20px 5px;
+    background-color: rgb(248, 240, 240);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container .btn {
+    background-color: rgb(207, 212, 207);
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 5.5em;
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+.main__controls {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(24, 22, 22);
+    padding: 1em 0;
+}
+
+.main__controls__block {
+    display: block;
+}
+
+.main__controls__button {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 0.5em;
+  color: white;
+  background: #494a4b;
+  border-radius: 50%;
+  height: 1.7em;
+  width: 1.7em;
+}
+
+.main__controls__button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.footer__file {
+    position: absolute;
+}
+
+.footer__file__input {
+
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 1;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.file__application {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 0 1em;
+    border-radius: 10px;
+    margin: auto 0;
+    background-color: rgb(69, 99, 165);
+}
+
+.file__application__left {
+    width: 25%;
+    height: 100%;
+    padding: auto 16px;
+    float: left;
+}
+
+.file__application__center {
+    width: 65%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    font-weight: bolder;
+    word-wrap: break-word;
+}
+
+.file__application__right {
+    width: 10%;
+    height: 100%;
+    padding-top: auto;
+    padding-left: 2px;
+    float: left;
+    cursor: pointer;
+}
+
+.file__application__left:hover {
+    opacity: 0.9;
+}
+
+/* .inputfile:focus + label,
+.inputfile + label:hover {
+} */

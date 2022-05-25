@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Header */
+
+.header {
+    height: 3em;
+    display: block;
+    position: relative;
+}
+
+/* Main */
+.main {
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: beige;
+}
+
+.form-title {
+    text-align: center;
+}
+
+#main-logo {
+    color: red;
+}
+
+#main-title {
+
+}
+
+.main > form {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 5em;
+}
+
+.btn-createaccount {
+    text-decoration: none;
+}
+
+.btn-createaccount:hover {
+    text-decoration: none;
+}
+
+.function-form {
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+.btn-submit {
+    display: block;
+    float: right;
+    width: 40%;
+}
+
+/* Footer */
+.footer {
+    height: 3em;
+    display: block;
+    position: relative;
+}

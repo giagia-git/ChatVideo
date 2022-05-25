@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 1em;
+}
+
+/* menu */
+.menu {
+    width: 100%;
+    height: 35em;
+    padding: 2em 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: beige;
+    overflow-y: auto;
+}
+
+.menu > div > a {
+    margin: 5px 0;
+}
+
+/* main */
+.main {
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+td > a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.main__func {
+    margin-bottom: 15px;
+}
+
+#form-search {
+    display: block;
+    float :left;
+}
+
+form > btn {
+    display: block;
+    float: left;
+}
+input {
+    font-size: 20px;
+}
+button {
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+#btn-blockaccount {
+    float: left;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+#btn-deleteaccount {
+    float: left;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#btn-openblockaccount {
+    float: left;
+    background-color: rgb(85, 161, 231);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+ul {
+    display: block;
+    float: right;
+    margin-right: 1%;
+}
+ul > li {
+    display: inline-block;
+    float: left;
+    padding: 5px 10px;
+}
+ul > li > a {
+    color: black;
+    background-color: #E3E1E2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul > li > a:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    position: relative;
+    width: 100%;
+    background-color: #1d2635;
+  }
+  
+  .logo > h3 {
+    color: #eeeeee;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 5px;
+  }
+  
+  .main {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .main__left {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .videos__group {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    background-color: #161d29;
+    overflow: hidden;
+  }
+  
+  video {
+    /* height: 300px */
+    height: 150px; 
+    border-radius: 1rem;
+    /* margin: 0.5rem; */
+    /* width: 400px */
+    width: 300px;
+    object-fit: cover;
+    /* transform: rotateY(180deg); */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+  }
+  
+  .options {
+    padding: 1rem;
+    display: flex;
+    background-color: #1d2635;
+  }
+  
+  .options__left {
+    display: flex;
+  }
+  
+  .options__right {
+    margin-left: auto;
+  }
+  
+  .options__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 135, 192);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    width: 50px;
+    margin: 0 0.5rem;
+  }
+
+  .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .inputfile + label {
+      color: white;
+      display: inline-block;
+      cursor: pointer;
+  }
+  
+  img {
+      object-fit: cover;
+      border-radius: 5px;
+  }
+  
+  .background__red {
+    background-color: #f6484a;
+  }
+  
+  .main__right {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    background-color: #242f41;
+  }
+  
+  .main__chat_window {
+    flex-grow: 1;
+    overflow-y: scroll;
+  }
+  
+  .main__chat_window::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .main__message_container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .is-typing {
+    height: 5%;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0.5em;
+    color: white;
+}
+  
+  .main__message_container > form > input {
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: none;
+  }
+  
+  .main__message_container > form > button {
+    color: #eeeeee;
+  }
+
+  .main__message_container > form > button:hover {
+    color: #eeeeee;
+    opacity: 0.8;
+  }
+
+  .chat-messages .message .meta {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+  
+  .chat-messages .message .meta span {
+    margin-left: 2px;
+    color: red;
+  }
+
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    color: #eeeeee;
+  }
+  
+  #video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #showChat {
+    display: none;
+  }
+  
+  .header__back {
+    display: none;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 17px;
+    left: 28px;
+    color: #fff;
+  }
+  
+  @media (max-width: 700px) {
+    .main__right {
+      display: none;
+    }
+    .main__left {
+      width: 100%;
+      flex: 1;
+    }
+  
+    video {
+      height: auto;
+      width: 100%;
+    }
+  
+    #showChat {
+      display: flex;
+    }
+  }
+
+
+.file__application {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 0 1em;
+  border-radius: 10px;
+  margin: auto 0;
+  background-color: rgb(45, 45, 46);
+}
+
+.file__application__left {
+  width: 25%;
+  height: 100%;
+  padding: auto 16px;
+  float: left;
+}
+
+.file__application__center {
+  width: 65%;
+  height: 100%;
+  float: left;
+  font-size: 13px;
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+
+.file__application__right {
+  width: 10%;
+  height: 100%;
+  padding-top: auto;
+  padding-left: 2px;
+  float: left;
+  cursor: pointer;
+}
+
+.file__application__left:hover {
+  opacity: 0.9;
+}
