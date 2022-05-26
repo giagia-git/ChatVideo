@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 const use__router = require(__dirname + "/public/router/main");
 app.use('/',use__router);
 
-const botName = 'ZoomCard Bot';
+const botName = 'Meet Bot';
 
 io.on('connection', socket => {
 
@@ -180,14 +180,14 @@ io.on('connection', socket => {
             })
         
             // only show in client to the user connecting
-            socket.emit('message', formatMessage(botName, 'Welcome to ZoomCord!'));
+            socket.emit('message', formatMessage(botName, 'Hello world!'));
 
             // Broadcast to all except the user itself in a specif room
             socket.broadcast
                 .to(user.room)
                 .emit(
                     'message',
-                    formatMessage(botName, `${user.username} has joined the chat`)
+                    formatMessage(botName, `${user.username} tham gia vào phòng`)
                 );
             console.log(`user.name: ${user.username}, peerId: ${userPeerId}`);
 
@@ -236,7 +236,7 @@ io.on('connection', socket => {
                 if (user) {
                     io
                     .to(user.room)
-                    .emit('message', formatMessage(botName, `${user.username} has left the chat`));
+                    .emit('message', formatMessage(botName, `${user.username} đã rời khỏi phòng`));
                 }
 
                 // Send users and room info
